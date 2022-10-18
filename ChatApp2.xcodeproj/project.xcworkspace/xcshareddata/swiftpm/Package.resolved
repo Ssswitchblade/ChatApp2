@@ -19,6 +19,15 @@
       }
     },
     {
+      "identity" : "chatlayout",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ekazaev/ChatLayout",
+      "state" : {
+        "branch" : "master",
+        "revision" : "3f86ffe19ffcc4394b1aa01fa51bf0ccfecf641f"
+      }
+    },
+    {
       "identity" : "firebase-ios-sdk",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/firebase/firebase-ios-sdk",
@@ -77,8 +86,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/nathantannar4/InputBarAccessoryView",
       "state" : {
-        "revision" : "e5da8c5e3c6ff2740ec2b721dd71e2cf24053001",
-        "version" : "6.1.0"
+        "branch" : "master",
+        "revision" : "0c4431a7f765ecb81dd97615023ff858bf65f89c"
       }
     },
     {
@@ -88,15 +97,6 @@
       "state" : {
         "revision" : "0706abcc6b0bd9cedfbb015ba840e4a780b5159b",
         "version" : "1.22.2"
-      }
-    },
-    {
-      "identity" : "messagekit",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/MessageKit/MessageKit",
-      "state" : {
-        "branch" : "main",
-        "revision" : "fb128e0038609e076c27005af7107279812c3b3c"
       }
     },
     {
