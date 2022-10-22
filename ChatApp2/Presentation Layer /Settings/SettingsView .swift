@@ -15,6 +15,7 @@ class SettingsView: UIView {
     init(viewModel: SettingsViewModel) {
         self.viewModel = viewModel
         super.init(frame: .zero)
+        backgroundColor = .white
     }
     
     required init?(coder: NSCoder) {

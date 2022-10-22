@@ -18,6 +18,8 @@ protocol ModuleFactoryProtocol {
 
 class ModuleFactory: ModuleFactoryProtocol {
     
+    lazy var container = DIContainer()
+    
     func makeTabBarController() -> TabBarController {
         return TabBarController()
     }
@@ -28,12 +30,12 @@ class ModuleFactory: ModuleFactoryProtocol {
     }
     
     func makeLoginViewController() -> LoginViewController {
-        let viewModel = LoginViewModel()
+        let viewModel = LoginViewModel(authService: container.authService)
         return LoginViewController(viewModel: viewModel)
     }
     
     func makeRegisterViewController() -> RegisterViewController {
-        let viewModel = RegisterViewModel()
+        let viewModel = RegisterViewModel(authService: container.authService)
         return RegisterViewController(viewModel: viewModel)
     }
     

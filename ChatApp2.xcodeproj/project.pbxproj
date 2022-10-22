@@ -18,6 +18,10 @@
 		84686BD728FF05CD00D45C8E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 84686BD628FF05CD00D45C8E /* SnapKit */; };
 		84686BDA28FF05E800D45C8E /* InputBarAccessoryView in Frameworks */ = {isa = PBXBuildFile; productRef = 84686BD928FF05E800D45C8E /* InputBarAccessoryView */; };
 		84686BDD28FF062B00D45C8E /* ChatLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 84686BDC28FF062B00D45C8E /* ChatLayout */; };
+		84686C09290423C600D45C8E /* UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84686C08290423C600D45C8E /* UIControl.swift */; };
+		84686C0B2904240000D45C8E /* UIButton .swift in Sources */ = {isa = PBXBuildFile; fileRef = 84686C0A2904240000D45C8E /* UIButton .swift */; };
+		84686C0D2904245200D45C8E /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84686C0C2904245200D45C8E /* UITextField.swift */; };
+		84686C1029042A0600D45C8E /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84686C0F29042A0600D45C8E /* BaseButton.swift */; };
 		847894C828DF8A0A00F0112C /* AppCoordinator .swift in Sources */ = {isa = PBXBuildFile; fileRef = 847894C728DF8A0A00F0112C /* AppCoordinator .swift */; };
 		847894CA28DF8C9F00F0112C /* ModuleFactory .swift in Sources */ = {isa = PBXBuildFile; fileRef = 847894C928DF8C9F00F0112C /* ModuleFactory .swift */; };
 		847894D028E04A3F00F0112C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847894CF28E04A3F00F0112C /* LoginViewController.swift */; };
@@ -27,7 +31,6 @@
 		847894D828E04A7A00F0112C /* RegisterViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = 847894D728E04A7A00F0112C /* RegisterViewController .swift */; };
 		847894DA28E04A8500F0112C /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847894D928E04A8500F0112C /* RegisterView.swift */; };
 		847894DC28E04A9300F0112C /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847894DB28E04A9300F0112C /* RegisterViewModel.swift */; };
-		847894DE28E04A9E00F0112C /* RegisterCoordinator .swift in Sources */ = {isa = PBXBuildFile; fileRef = 847894DD28E04A9E00F0112C /* RegisterCoordinator .swift */; };
 		847894E028E04AAC00F0112C /* SettingsViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = 847894DF28E04AAC00F0112C /* SettingsViewController .swift */; };
 		847894E228E04AB600F0112C /* SettingsView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 847894E128E04AB600F0112C /* SettingsView .swift */; };
 		847894E428E04AC000F0112C /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847894E328E04AC000F0112C /* SettingsViewModel.swift */; };
@@ -62,6 +65,10 @@
 		840CCA0A28E059A500A2C2F1 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		8459C7DC28E0604C00B33192 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		8459C7DE28E0680800B33192 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		84686C08290423C600D45C8E /* UIControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControl.swift; sourceTree = "<group>"; };
+		84686C0A2904240000D45C8E /* UIButton .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton .swift"; sourceTree = "<group>"; };
+		84686C0C2904245200D45C8E /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		84686C0F29042A0600D45C8E /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		847894C728DF8A0A00F0112C /* AppCoordinator .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppCoordinator .swift"; sourceTree = "<group>"; };
 		847894C928DF8C9F00F0112C /* ModuleFactory .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModuleFactory .swift"; sourceTree = "<group>"; };
 		847894CF28E04A3F00F0112C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -71,7 +78,6 @@
 		847894D728E04A7A00F0112C /* RegisterViewController .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterViewController .swift"; sourceTree = "<group>"; };
 		847894D928E04A8500F0112C /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		847894DB28E04A9300F0112C /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
-		847894DD28E04A9E00F0112C /* RegisterCoordinator .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterCoordinator .swift"; sourceTree = "<group>"; };
 		847894DF28E04AAC00F0112C /* SettingsViewController .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsViewController .swift"; sourceTree = "<group>"; };
 		847894E128E04AB600F0112C /* SettingsView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsView .swift"; sourceTree = "<group>"; };
 		847894E328E04AC000F0112C /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
@@ -139,6 +145,35 @@
 			path = "Business logic layer";
 			sourceTree = "<group>";
 		};
+		84686BDE29000D4600D45C8E /* Login  */ = {
+			isa = PBXGroup;
+			children = (
+				847894CF28E04A3F00F0112C /* LoginViewController.swift */,
+				847894D328E04A5300F0112C /* LoginViewModel.swift */,
+				847894D128E04A4700F0112C /* LoginView.swift */,
+				847894D528E04A6200F0112C /* LoginCoordinator .swift */,
+			);
+			path = "Login ";
+			sourceTree = "<group>";
+		};
+		84686C07290423B800D45C8E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84686C08290423C600D45C8E /* UIControl.swift */,
+				84686C0A2904240000D45C8E /* UIButton .swift */,
+				84686C0C2904245200D45C8E /* UITextField.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		84686C0E290429F500D45C8E /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				84686C0F29042A0600D45C8E /* BaseButton.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
 		847894C628DF89BE00F0112C /* App Layer  */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,10 +187,8 @@
 		847894CB28E049B500F0112C /* Login  */ = {
 			isa = PBXGroup;
 			children = (
-				847894CF28E04A3F00F0112C /* LoginViewController.swift */,
-				847894D128E04A4700F0112C /* LoginView.swift */,
-				847894D328E04A5300F0112C /* LoginViewModel.swift */,
-				847894D528E04A6200F0112C /* LoginCoordinator .swift */,
+				847894CC28E049C200F0112C /* Register  */,
+				84686BDE29000D4600D45C8E /* Login  */,
 			);
 			path = "Login ";
 			sourceTree = "<group>";
@@ -166,7 +199,6 @@
 				847894D728E04A7A00F0112C /* RegisterViewController .swift */,
 				847894D928E04A8500F0112C /* RegisterView.swift */,
 				847894DB28E04A9300F0112C /* RegisterViewModel.swift */,
-				847894DD28E04A9E00F0112C /* RegisterCoordinator .swift */,
 			);
 			path = "Register ";
 			sourceTree = "<group>";
@@ -217,7 +249,6 @@
 				840CCA0C28E059A900A2C2F1 /* TabBar */,
 				847894CE28E04A0D00F0112C /* Search */,
 				847894CD28E049CE00F0112C /* Settings */,
-				847894CC28E049C200F0112C /* Register  */,
 				847894CB28E049B500F0112C /* Login  */,
 				8484097128DF839C003754AB /* MainChats */,
 			);
@@ -264,9 +295,9 @@
 			isa = PBXGroup;
 			children = (
 				847894C628DF89BE00F0112C /* App Layer  */,
-				846061A328FEE6E800B75C36 /* Business logic layer */,
 				8484097228DF8460003754AB /* Core Layer  */,
 				8484097028DF837C003754AB /* Presentation Layer  */,
+				846061A328FEE6E800B75C36 /* Business logic layer */,
 				8499743828DF7E2A0008C70E /* LaunchScreen.storyboard */,
 				8499743B28DF7E2A0008C70E /* Info.plist */,
 				847B212228E1B4490047ACA0 /* GoogleService-Info.plist */,
@@ -278,6 +309,8 @@
 		849C214828FEE8EE00212F76 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				84686C0E290429F500D45C8E /* UIButton */,
+				84686C07290423B800D45C8E /* Extensions */,
 				849C215A28FEFB7500212F76 /* Builder */,
 				847894EF28E0510600F0112C /* Factory */,
 				847894F028E0512000F0112C /* Coordinator */,
@@ -428,12 +461,14 @@
 				8499742E28DF7E270008C70E /* AppDelegate.swift in Sources */,
 				8484096928DF82EF003754AB /* MainChatsViewController .swift in Sources */,
 				847894DC28E04A9300F0112C /* RegisterViewModel.swift in Sources */,
+				84686C0B2904240000D45C8E /* UIButton .swift in Sources */,
 				847894E628E04ACC00F0112C /* SettingsCoordinator .swift in Sources */,
 				8459C7DD28E0604C00B33192 /* TabBarCoordinator.swift in Sources */,
 				847894E228E04AB600F0112C /* SettingsView .swift in Sources */,
 				8459C7DF28E0680800B33192 /* NavigationController.swift in Sources */,
 				8484097428DF84BD003754AB /* Router.swift in Sources */,
 				849C214728FEE8E900212F76 /* DI.swift in Sources */,
+				84686C0D2904245200D45C8E /* UITextField.swift in Sources */,
 				849C215728FEF2A300212F76 /* UserAPIClient.swift in Sources */,
 				847894E828E04AE300F0112C /* SearchViewController .swift in Sources */,
 				847894D828E04A7A00F0112C /* RegisterViewController .swift in Sources */,
@@ -445,8 +480,10 @@
 				849C215C28FEFB8500212F76 /* RequestBuilder .swift in Sources */,
 				849C214D28FEEC3900212F76 /* UserService.swift in Sources */,
 				849C215928FEF2D400212F76 /* AuthAPIClient .swift in Sources */,
+				84686C09290423C600D45C8E /* UIControl.swift in Sources */,
 				8484096B28DF8318003754AB /* MainChatsCoordinator .swift in Sources */,
 				840CCA0928E058E400A2C2F1 /* CoordinatorFactory.swift in Sources */,
+				84686C1029042A0600D45C8E /* BaseButton.swift in Sources */,
 				847894EE28E04B0600F0112C /* SearchCoordinator .swift in Sources */,
 				8499743028DF7E270008C70E /* SceneDelegate.swift in Sources */,
 				847894E028E04AAC00F0112C /* SettingsViewController .swift in Sources */,
@@ -455,7 +492,6 @@
 				847894EC28E04AF700F0112C /* SearchViewModel.swift in Sources */,
 				847894E428E04AC000F0112C /* SettingsViewModel.swift in Sources */,
 				847894D228E04A4700F0112C /* LoginView.swift in Sources */,
-				847894DE28E04A9E00F0112C /* RegisterCoordinator .swift in Sources */,
 				849C214B28FEEB1D00212F76 /* APIClient.swift in Sources */,
 				849C215328FEEDC100212F76 /* UserContainer.swift in Sources */,
 				847894D028E04A3F00F0112C /* LoginViewController.swift in Sources */,

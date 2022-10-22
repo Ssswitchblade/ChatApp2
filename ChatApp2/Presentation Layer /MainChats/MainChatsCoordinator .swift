@@ -17,4 +17,12 @@ final class MainChatsCoordinator: BaseCoordinator {
         self.router = router
         self.moduleFactory = moduleFactory
     }
+    override func start() {
+        startMainChats()
+    }
+    
+    private func startMainChats() {
+        let mainChatsVC = moduleFactory.makeMainChatsViewController()
+        router.push(mainChatsVC, animated: true)
+    }
 }

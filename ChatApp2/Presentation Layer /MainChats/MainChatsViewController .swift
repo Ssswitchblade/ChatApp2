@@ -12,10 +12,16 @@ import Combine
 class MainChatsViewController: UIViewController {
     
     var viewModel: MainChatsViewModel
+    private lazy var mainChatsView = self.view as? MainChatsView
     
     init(viewModel: MainChatsViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
+    }
+    override func loadView() {
+        super.loadView()
+        let view = MainChatsView(viewModel: viewModel)
+        self.view = view
     }
     
     required init?(coder: NSCoder) {

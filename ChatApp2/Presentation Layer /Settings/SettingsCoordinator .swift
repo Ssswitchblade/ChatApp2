@@ -16,4 +16,13 @@ final class SettingsCoordinator: BaseCoordinator {
         self.router = router
         self.moduleFactory = moduleFactory
     }
+    
+    override func start() {
+        settingsStart()
+    }
+    
+    private func settingsStart() {
+        let settingsVC = moduleFactory.makeSettingsViewController()
+        router.push(settingsVC, animated: true)
+    }
 }

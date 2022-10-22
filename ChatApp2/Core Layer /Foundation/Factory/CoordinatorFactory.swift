@@ -13,21 +13,20 @@ protocol CoordinatorFactoryProtocol {
     func makeTabBarCoordinator(router: Router)-> TabBarCoordinator
     func makeSearchCoordinator(router: Router)-> SearchCoordinator
     func makeSettingsCoordinator(router: Router)-> SettingsCoordinator
-    func makeRegisterCoordinator(router: Router)-> RegisterCoordinator
     func makeLoginCoordinator(router: Router)-> LoginCoordinator
     func makeMainChatsCoordinator(router: Router)-> MainChatsCoordinator
 }
 
 final class CoordinatorFactory: CoordinatorFactoryProtocol {
     
-    var moduleFactory: ModuleFactoryProtocol
+    var moduleFactory: ModuleFactory
     
-    init(moduleFactory: ModuleFactoryProtocol) {
+    init(moduleFactory: ModuleFactory) {
         self.moduleFactory = moduleFactory
     }
     
 func makeAppCoordinator(router: Router) -> AppCoordinator {
-        return AppCoordinator(router: router, coordinatorFactory: self)
+    return AppCoordinator(router: router, coordinatorFactory: self, authService: moduleFactory.container.authService)
     }
     
     func makeTabBarCoordinator(router: Router) -> TabBarCoordinator {
@@ -40,10 +39,6 @@ func makeAppCoordinator(router: Router) -> AppCoordinator {
     
     func makeSettingsCoordinator(router: Router) -> SettingsCoordinator {
         return SettingsCoordinator(router: router, moduleFactory: moduleFactory)
-    }
-    
-    func makeRegisterCoordinator(router: Router) -> RegisterCoordinator {
-        return RegisterCoordinator(router: router, moduleFactory: moduleFactory)
     }
     
     func makeLoginCoordinator(router: Router) -> LoginCoordinator {

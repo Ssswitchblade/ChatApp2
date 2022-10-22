@@ -12,9 +12,11 @@ class MainChatsView: UIView {
     
     var viewModel: MainChatsViewModel
     
+    
     init(viewModel: MainChatsViewModel) {
         self.viewModel = viewModel
         super.init(frame: .zero)
+        backgroundColor = .white 
     }
     
     required init?(coder: NSCoder) {

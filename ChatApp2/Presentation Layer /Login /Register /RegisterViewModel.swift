@@ -10,4 +10,13 @@ import UIKit
 
 final class RegisterViewModel {
     
+    var authService: AuthService?
+    var finishFlow: (() -> Void)?
+    var loginBack: (() -> Void)?
+    
+    
+    init(authService: AuthService?) {
+        self.authService = authService
+    }
+    
 }

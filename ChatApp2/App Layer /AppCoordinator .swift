@@ -12,16 +12,35 @@ final class AppCoordinator: BaseCoordinator {
     
     var router: Router
     var coordinatorFactory: CoordinatorFactory
+    var isLogin: Bool = false
+    var authService: AuthService
     
-    init(router: Router, coordinatorFactory: CoordinatorFactory) {
+    init(router: Router, coordinatorFactory: CoordinatorFactory, authService: AuthService) {
         self.router = router
         self.coordinatorFactory = coordinatorFactory
+        self.authService = authService
     }
     
     override func start() {
-        runTabBar()
+        isLogin = authService.isLogin
+        if !isLogin {
+            runLoginVC()
+        } else {
+            runTabBar()
+        }
     }
+    
+    private func runLoginVC() {
+        let loginCoordinator = coordinatorFactory.makeLoginCoordinator(router: router)
+        retain(loginCoordinator)
+        loginCoordinator.start()
+    }
+       
     private func runTabBar() {
+        
+        
+        let loginCoordinator = coordinatorFactory.makeLoginCoordinator(router: router)
+        
         let tabBarCoordinator = coordinatorFactory.makeTabBarCoordinator(router: router)
         retain(tabBarCoordinator)
         tabBarCoordinator.start()
