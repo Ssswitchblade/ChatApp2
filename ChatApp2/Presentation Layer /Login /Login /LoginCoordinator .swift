@@ -11,6 +11,7 @@ final class LoginCoordinator: BaseCoordinator {
     
     var router: Router
     var moduleFactory: ModuleFactoryProtocol
+    var isLOgin: Bool 
     
     init(router: Router, moduleFactory: ModuleFactoryProtocol) {
         self.router = router
